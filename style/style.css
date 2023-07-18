@@ -1,0 +1,75 @@
+/* shared styles */
+
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+:root {
+    --primary-color: #534C64;
+    --secondery-color: #FF42A5;
+    --third-color: 
+}
+
+/* nav section style  */
+nav {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-container ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+.nav-title-logo .logo {
+    width: 85px;
+    height: 40px;
+}
+
+.section-title {
+
+    padding-left: 20px;
+    font-size: 2.8rem;
+    font-weight: 700;
+
+}
+.nav-container li {
+    padding: 0px 30px;
+}
+.nav-follow-logo {
+    padding: 10px 24px;
+    border-radius: 8px;
+background: rgba(11, 2, 35, 0.10);
+}
+.nav-follow-logo a {
+    text-decoration: none;
+}
+
+.nav-follow-logo .logo {
+    width: 35px;
+    padding-left: 20px;
+
+}
+.nav-span-title {
+    color:var(--secondery-color);
+}
+
+/* nav section style finished  */
