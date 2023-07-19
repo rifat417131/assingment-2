@@ -448,3 +448,73 @@ header {
     }
   }
   /************** ANIMATION STYLING END*****************/
+
+  /************** PLAY GAME INSTANTLY STYLING START*****************/
+.section-play-game {
+    margin-top: 9rem;
+  }
+  
+  .section-play-game-container {
+    display: flex;
+    align-items: center;
+    gap: 12rem;
+  }
+  
+  .section-play-game-column-text,
+  .section-play-game-column-img {
+    min-height: 5rem;
+    width: calc((100% - 120px) / 2);
+  }
+  
+  .section-play-game-column-text {
+    text-align: right;
+    padding: 3rem;
+  }
+  
+  .section-play-game-column-text .section-title {
+    line-height: 1.4;
+  }
+  
+  .section-play-game-column-text .section-description {
+    width: 70%;
+    margin-left: 30%;
+  }
+  .section-play-game-column-img {
+    position: relative;
+  }
+  
+  .section-play-game-column-img img {
+    width: 100%;
+  }
+  
+  .section-play-game-column-img .section-play-game-banner-sub-img {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: -10rem;
+    bottom: -6rem;
+    animation: bouncing 3s ease infinite alternate-reverse;
+  }
+  
+  /************** PLAY GAME INSTANTLY-2 STYLING START*****************/
+  .section-play-game-2 {
+    margin-top: 12rem !important;
+  }
+  .section-play-game-column-img .position-right {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    right: -10rem;
+    bottom: -6rem;
+    animation: bouncing 3s ease infinite alternate-reverse;
+  }
+  
+  .text-align-left {
+    text-align: left !important;
+  }
+  
+  .text-align-left .section-description {
+    margin-left: 0 !important;
+    margin-right: 30%;
+  }
+  /************** PLAY GAME INSTANTLY STYLING END*****************/
