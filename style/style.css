@@ -1,75 +1,279 @@
-/* shared styles */
-
-/* google font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
-
-* {
-    font-family: 'Inter', sans-serif;
-    font-family: 'Work Sans', sans-serif;
-}
+/* FONT FAMILY WORK SANS Inknut Antiqua */
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@500;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap");
 
 :root {
-    --primary-color: #534C64;
-    --secondery-color: #FF42A5;
-    --third-color: 
+  --primary-color: #ff42a5;
+  --text-linear-gradient: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  --font-color-primary: #0b0223;
+  --paragraph-color: #534c64;
+  --heder-background: #ede4ff;
+  --primary-font: "Work Sans", sans-serif, system-ui;
+  --heading-font: "Inknut Antiqua", sans-serif, system-ui;
+  --secondary-btn-color: #4ec5f7;
 }
 
-/* nav section style  */
-nav {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    align-items: center;
-    background: #FFF;
-    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+/************** RESET STYLING START*****************/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav div {
-    display: flex;
-    align-items: center;
+html {
+  font-family: var(--primary-font);
+  font-size: 62.5%;
+  font-weight: 400;
 }
 
-
-.nav-container ul {
-    display: flex;
-    list-style: none;
+body {
+  scroll-behavior: smooth;
 }
 
-nav li a {
-    text-decoration: none;
+li {
+  list-style: none;
 }
 
-.nav-title-logo .logo {
-    width: 85px;
-    height: 40px;
+a {
+  text-decoration: none;
+}
+/************** RESET STYLING END*****************/
+
+/************** REUSE STYLING START*****************/
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding: 1.5rem 4rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  border-radius: 3rem;
+  box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-image: var(--text-linear-gradient);
+  color: #fff;
+  transition: transform 0.4s ease;
+  position: relative;
+}
+
+.btn-secondary {
+  background-image: linear-gradient(
+    60deg,
+    var(--secondary-btn-color),
+    var(--primary-color)
+  );
+  color: #fff;
+  margin-left: 2rem;
+  transition: transform 0.4s ease;
+}
+
+/* .btn-primary:active {
+  transform: translateY(-1rem);
+} */
+
+.btn-primary:hover {
+  transform: scale(1.1);
+}
+.btn-secondary:hover {
+  transform: scale(1.1);
+}
+
+.border-red {
+  border: 2px solid red;
+}
+
+.border-green {
+  border: 2px solid green;
+}
+
+.section-title-box {
+  text-align: center;
 }
 
 .section-title {
-
-    padding-left: 20px;
-    font-size: 2.8rem;
-    font-weight: 700;
-
-}
-.nav-container li {
-    padding: 0px 30px;
-}
-.nav-follow-logo {
-    padding: 10px 24px;
-    border-radius: 8px;
-background: rgba(11, 2, 35, 0.10);
-}
-.nav-follow-logo a {
-    text-decoration: none;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 3.8rem;
+  color: var(--font-color-primary);
+  line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
-.nav-follow-logo .logo {
-    width: 35px;
-    padding-left: 20px;
-
+.section-title-highlight {
+  background-image: var(--text-linear-gradient);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.nav-span-title {
-    color:var(--secondery-color);
+
+.section-description {
+  font-size: 1.6rem;
+  color: var(--paragraph-color);
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+/************** REUSE STYLING END*****************/
+
+/************** NAVBAR STYLING START*****************/
+nav {
+  min-height: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(11, 2, 35, 0.1);
+}
+nav .logo .logo-2 {
+  height: 4rem;
+  margin-left: 0.4rem;
 }
 
-/* nav section style finished  */
+nav .main-menu {
+  display: flex;
+  margin-top: 0.6rem;
+}
+
+nav .main-menu ul {
+  display: flex;
+  align-items: center;
+}
+
+nav .main-menu ul li {
+  margin-right: 3rem;
+}
+
+nav .main-menu ul li a:link,
+a:visited {
+  color: #3c354f;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+nav .main-menu .main-menu-icon-box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.8rem;
+  padding: 0.9rem 2rem;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+}
+
+nav .main-menu .main-menu-icon-box .main-menu-icon {
+  /* font-size: 2rem; */
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.main-menu-icon-box .main-menu-icon .bxl-youtube {
+  color: #ff0000;
+  font-size: 3rem;
+}
+
+.main-menu-icon-box .main-menu-icon .bxl-facebook-square {
+  color: #097eeb;
+  font-size: 3rem;
+}
+/************** NAVBAR STYLING END*****************/
+
+/************** HEDER STYLING START*****************/
+header {
+  background-color: var(--heder-background);
+  height: auto;
+}
+
+/************** BANNER SECTION STYLING START*****************/
+.banner-section {
+  margin-top: 5rem;
+  background-image: url("Group\ 14.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: contain;
+}
+.banner-section-container {
+  display: flex;
+  /* align-items: center; */
+  gap: 6rem;
+}
+.banner-section-column {
+  min-height: 5rem;
+  flex-basis: calc((100% - 60px) / 2);
+} 
+.banner-section-column-text {
+  /* background-image: url("../images/group-14.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+}
+
+.banner-section-title-secondary {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-wrap: 2px;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: var(--heading-font);
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: -1.8rem;
+}
+
+.banner-section-title-primary {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: var(--heading-font);
+  font-weight: 800;
+  font-size: 5rem;
+  background-image: var(--text-linear-gradient);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-bottom: -1.5rem;
+}
+
+.banner-section-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.banner-section-info li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: var(--paragraph-color);
+}
+.banner-section-info li span .bx {
+  font-size: 2rem;
+  margin-top: 0.2rem;
+  color: var(--primary-color);
+}
+.banner-section-info li span {
+  display: inline-block;
+}
+
+.banner-section-btn-box {
+  margin-top: 4rem;
+}
+
+.banner-section-column img {
+  width: 100%;
+}
+/************** HEADER STYLING END*****************/
