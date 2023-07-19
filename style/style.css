@@ -1,4 +1,3 @@
-/* FONT FAMILY WORK SANS Inknut Antiqua */
 @import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@500;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap");
 
 :root {
@@ -11,8 +10,6 @@
   --heading-font: "Inknut Antiqua", sans-serif, system-ui;
   --secondary-btn-color: #4ec5f7;
 }
-
-/************** RESET STYLING START*****************/
 *,
 *::before,
 *::after {
@@ -26,11 +23,9 @@ html {
   font-size: 62.5%;
   font-weight: 400;
 }
-
 body {
   scroll-behavior: smooth;
 }
-
 li {
   list-style: none;
 }
@@ -38,10 +33,6 @@ li {
 a {
   text-decoration: none;
 }
-/************** RESET STYLING END*****************/
-
-
-/************** REUSE STYLING START*****************/
 .container {
   max-width: 114rem;
   margin: 0 auto;
@@ -77,11 +68,6 @@ a {
   margin-left: 2rem;
   transition: transform 0.4s ease;
 }
-
-/* .btn-primary:active {
-  transform: translateY(-1rem);
-} */
-
 .btn-primary:hover {
   transform: scale(1.1);
 }
@@ -139,9 +125,7 @@ a {
 .row-reverse {
   flex-direction: row-reverse;
 }
-/************** REUSE STYLING END*****************/
 
-/************** NAVBAR STYLING START*****************/
 nav {
   min-height: 9rem;
   display: flex;
@@ -200,15 +184,12 @@ nav .main-menu .main-menu-icon-box .main-menu-icon {
   color: #097eeb;
   font-size: 3rem;
 }
-/************** NAVBAR STYLING END*****************/
-
-/************** HEDER STYLING START*****************/
 header {
   background-color: var(--heder-background);
   height: auto;
 }
 
-/************** BANNER SECTION STYLING START*****************/
+
 .banner-section {
   margin-top: 5rem;
   background-image: url("../images/group-14.png");
@@ -218,7 +199,7 @@ header {
 }
 .banner-section-container {
   display: flex;
-  /* align-items: center; */
+  
   gap: 6rem;
 }
 .banner-section-column {
@@ -226,7 +207,7 @@ header {
   flex-basis: calc((100% - 60px) / 2);
 }
 .banner-section-column-text {
-  /* background-image: url("../images/group-14.png");
+  background-image: url("Group\ 14.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom; */
@@ -291,9 +272,7 @@ header {
 .banner-section-column img {
   width: 100%;
 }
-/************** HEADER STYLING END*****************/
 
-/************** WE ARE GAMER STYLING START*****************/
 .section-we-are-gammer {
   padding: 8rem 0;
   background: linear-gradient(
@@ -357,9 +336,7 @@ header {
   font-weight: 700;
   color: var(--paragraph-color);
 }
-/************** WE ARE GAMER STYLING END*****************/
 
-/************** ONLINE GAME STYLING START*****************/
 .section-online-game {
   margin-top: 9rem;
 }
@@ -447,13 +424,7 @@ header {
   padding: 1rem;
 }
 
-/* .section-online-game-item .card .overlay span .bx {
-  font-size: 3rem;
-  color: #fff;
-} */
-/************** ONLINE GAME  STYLING END*****************/
 
-/************** PLAY GAME INSTANTLY STYLING START*****************/
 .section-play-game {
   margin-top: 9rem;
 }
@@ -500,7 +471,6 @@ header {
   animation: bouncing 3s ease infinite alternate-reverse;
 }
 
-/************** PLAY GAME INSTANTLY-2 STYLING START*****************/
 .section-play-game-2 {
   margin-top: 12rem !important;
 }
@@ -521,9 +491,7 @@ header {
   margin-left: 0 !important;
   margin-right: 30%;
 }
-/************** PLAY GAME INSTANTLY STYLING END*****************/
 
-/************** CAREERS SECTION STYLING START*****************/
 .section-careers {
   margin-top: 12rem;
   padding: 6rem 0;
@@ -541,15 +509,10 @@ header {
   flex-basis: calc((100% - 40px) / 2);
 }
 
-/* .section-careers-column-img {
-  background-image: ;
-  
-} */
 .section-careers-column-text {
   color: #fff;
   padding: 2rem;
 }
-
 .section-careers-title {
   font-size: 3.8rem;
   font-weight: 700;
@@ -557,13 +520,11 @@ header {
   line-height: 1.2;
   margin-bottom: 2rem;
 }
-
 .section-careers-description {
   font-size: 1.3rem;
   line-height: 1.4;
   font-weight: 500;
 }
-
 .section-careers-list {
   columns: 2;
   margin: 4rem 0 3.5rem 0;
@@ -584,18 +545,12 @@ header {
   height: 100%;
 }
 
-/************** CAREERS SECTION STYLING END*****************/
 
-/************** ALL GAME SECTION STYLING START*****************/
 .section-all-game {
     margin-top: 12rem;
   }
   
-  /* .section-center {
-    display: flex;
-    justify-content: center;
-  } */
-  
+ 
   .section-all-game-container {
     display: flex;
     justify-content: center;
@@ -636,9 +591,58 @@ header {
   .section-all-game-item:hover a {
     color: var(--primary-color);
   }
-  /************** ALL GAME SECTION STYLING END*****************/
+ 
+footer {
+    text-align: center;
+    background-color: #0B0223;
+    padding: 100px 0px;
+}
+.foot-section-title{
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+background-clip: text;
+}
+.web-title-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+   
+}
+.title {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+    color: #ede4ff;
+}
+.title h3 {
+    color: var(--fourth-color);
+   
+}
+.foot-section-title {
+    font-size: 2.8rem;
+    color: var(--fourth-color);
+}
+.foot-section-title span{
+    color: var(--third-color);
+}
+.footer-web-title-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+footer .font-color{
+    color: rgba(255, 255, 255, 0.60);
+}
+.Terms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
 
-/************** ANIMATION STYLING START*****************/
+
 @keyframes bouncing {
   to {
     transform: translateY(0.7rem);
@@ -647,4 +651,3 @@ header {
     transform: translateY(-0.7rem);
   }
 }
-/************** ANIMATION STYLING END*****************/
