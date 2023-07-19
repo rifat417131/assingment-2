@@ -40,6 +40,7 @@ a {
 }
 /************** RESET STYLING END*****************/
 
+
 /************** REUSE STYLING START*****************/
 .container {
   max-width: 114rem;
@@ -584,6 +585,58 @@ header {
 }
 
 /************** CAREERS SECTION STYLING END*****************/
+
+/************** ALL GAME SECTION STYLING START*****************/
+.section-all-game {
+    margin-top: 12rem;
+  }
+  
+  /* .section-center {
+    display: flex;
+    justify-content: center;
+  } */
+  
+  .section-all-game-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .section-all-game-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: calc((100% - 20px) / 5);
+    margin-bottom: 2rem;
+    gap: 0.5rem;
+    padding: 0.8rem;
+    border-radius: 5rem;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+  }
+  
+  .section-all-game-item img {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  
+  .section-all-game-item:hover {
+    border: 2px solid var(--primary-color);
+  }
+  
+  .section-all-game-item a:link,
+  .section-all-game-item a:visited {
+    color: var(--font-color-primary);
+    font-weight: 700;
+    font-size: 1.4rem;
+    transition: all 0.3s ease-in;
+  }
+  
+  .section-all-game-item:hover a {
+    color: var(--primary-color);
+  }
+  /************** ALL GAME SECTION STYLING END*****************/
 
 /************** ANIMATION STYLING START*****************/
 @keyframes bouncing {
