@@ -496,25 +496,3 @@ header {
     animation: bouncing 3s ease infinite alternate-reverse;
   }
   
-  /************** PLAY GAME INSTANTLY-2 STYLING START*****************/
-  .section-play-game-2 {
-    margin-top: 12rem !important;
-  }
-  .section-play-game-column-img .position-right {
-    width: 50%;
-    height: 50%;
-    position: absolute;
-    right: -10rem;
-    bottom: -6rem;
-    animation: bouncing 3s ease infinite alternate-reverse;
-  }
-  
-  .text-align-left {
-    text-align: left !important;
-  }
-  
-  .text-align-left .section-description {
-    margin-left: 0 !important;
-    margin-right: 30%;
-  }
-  /************** PLAY GAME INSTANTLY STYLING END*****************/
